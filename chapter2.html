@@ -3,6 +3,88 @@
         
     </head>
     <body>
+        <pre>
+            <a href = "Tableofcontent.html"> <h1> Back to content </h1> </a>
+          <h1> Number System and Boolean Logic </h1>  
+<hr>
+
+ <h1> Introduction to Number Systems </h1>
+ 
+A number system is a systematic way of representing numbers. In computing, different number systems are used for various purposes, from internal processing to data representation. The value of a digit in a positional number system depends on the digit itself, its position within the number,
+and the base (or radix) of the number system.
+
+The main positional number systems we will study are:
+
+Decimal Number System (Base-10): This is the number system we use daily. It has 10 unique digits (0-9). Each position represents a power of 10.
+Binary Number System (Base-2): This system is the foundation of all digital computers. It uses only two digits: 0 and 1 (bits). Each position represents a power of 2. Computers use binary because electronic circuits have two stable states: ON (1) or OFF (0).
+Octal Number System (Base-8): This system uses eight digits (0-7). Each position represents a power of 8. Octal is often used as a shorthand to represent long binary numbers because three binary digits can be represented by a single octal digit.
+Hexadecimal Number System (Base-16): This system uses sixteen digits (0-9 and A-F, where A represents 10, B represents 11, and so on, up to F for 15). Each position represents a power of 16. Hexadecimal is widely used in computer memory addressing and data representation
+ due to its ability to represent four binary digits with a single hexadecimal digit.
+The base or radix of a number system indicates the total number of unique digits or symbols used in that system.
+
+Number System Conversions
+Converting numbers between different bases is a critical skill in computer science. Here, we'll cover the most common conversions.
+
+1. Decimal to Binary, Octal, and Hexadecimal Conversion
+To convert a decimal number to another base, we use the division-remainder method. Divide the decimal number by the target base repeatedly, 
+noting the remainders at each step. The remainders, read from bottom to top, form the number in the new base.
+
+Example 1: Decimal to Binary
+Convert (25)10 to binary.
+
+Division	Remainder
+25 ÷ 2 = 12	1
+12 ÷ 2 = 6	0
+6 ÷ 2 = 3	0
+3 ÷ 2 = 1	1
+1 ÷ 2 = 0	1
+Reading remainders from bottom to top: (11001)2. So, (25)10 = (11001)2.
+
+Example 2: Decimal to Octal
+Convert (179)10 to octal.
+
+Division	Remainder
+179 ÷ 8 = 22	3
+22 ÷ 8 = 2	6
+2 ÷ 8 = 0	2
+Reading remainders from bottom to top: (263)8. So, (179)10 = (263)8.
+
+Example 3: Decimal to Hexadecimal
+Convert (475)10 to hexadecimal.
+
+Division	Remainder	Hex Equivalent
+475 ÷ 16 = 29	11	B
+29 ÷ 16 = 1	13	D
+1 ÷ 16 = 0	1	1
+Reading remainders from bottom to top: (1DB)16. So, (475)10 = (1DB)16.
+
+2. Binary, Octal, and Hexadecimal to Decimal Conversion
+To convert a number from any base to decimal, multiply each digit by its corresponding positional weight (base raised to the power of its position) and sum the results. Positions are counted from right to left, starting with 0.
+
+Example 1: Binary to Decimal
+Convert (11011)2 to decimal.
+
+(1 × 24) + (1 × 23) + (0 × 22) + (1 × 21) + (1 × 20)
+= (1 × 16) + (1 × 8) + (0 × 4) + (1 × 2) + (1 × 1)
+= 16 + 8 + 0 + 2 + 1
+= (27)10. So, (11011)2 = (27)10.
+
+Example 2: Octal to Decimal
+Convert (347)8 to decimal.
+
+(3 × 82) + (4 × 81) + (7 × 80)
+= (3 × 64) + (4 × 8) + (7 × 1)
+= 192 + 32 + 7
+= (231)10. So, (347)8 = (231)10.
+
+Example 3: Hexadecimal to Decimal
+Convert (2A5)16 to decimal.
+
+(2 × 162) + (A × 161) + (5 × 160)
+= (2 × 256) + (10 × 16) + (5 × 1)
+= 512 + 160 + 5
+= (677)10. So, (2A5)16 = (677)10.
+        </pre>
         
     </body>
     </html>
